@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+   min-width:1000px;  
+   _width: expression( document.body.clientWidth > 1000 ? "1000px" : "auto" ); /* sets max-width for IE6 */
+}
+
+.main {
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+}
+#nav-bar{
+  position: fixed;
+  top: 3%;
+  right: 1%;
+  padding: 4px;
+}
+
+#leave-chat{
+      cursor: pointer;
+}
+
+.nav-option{
+    display: inline;
+    color: #fff;
+    border: 1px white solid;
+    padding: 6px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-radius: 33px 36px 32px;
+    background-color: #546e7a;
+}s
+
+
+
+
+#timer{
+    color: #fff;
+    border: 1px white solid;
+    padding: 6px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-radius: 33px 36px 32px;
+    font-size: 1rem;
+    background-color: #546e7a;
+}
+.time-in-message{
+    font-size: 0.65rem;
+    font-weight: lighter;
+    /*width: 88px;*/
+}
+
+.main__right {
+  /*display: flex;*/
+  flex-direction: column;
+  flex: 1;
+  background-color: #323844;
+  display: flex;
+}
+
+.main__chat_window {
+  flex-grow: 1;
+  overflow-y: scroll;
+  height: 80vh;
+}
+
+.main__chat_window::-webkit-scrollbar {
+  display: none;
+}
+
+.main__message_container {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__message_container > input {
+  height: 35px;
+  flex: 1;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding-left: 20px;
+  border: none;
+  font-family: sans-serif;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+}
+
+.msg > b {
+  color: #fff;
+  /*display: flex;
+  align-items: center;*/
+  text-transform: capitalize;
+  padding-right: 4px;
+}
+
+.message > b > i {
+  margin-right: 0.7rem;
+  font-size: 1.5rem;
+}
+
+.message > span {
+  background-color: #eeeeee;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-family: sans-serif;
+  border-radius: 0px 11px 0px 11px;
+}
+

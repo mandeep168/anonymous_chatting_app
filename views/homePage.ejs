@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Video Calling</title>
+
+
+	<style>
+
+		body {
+				  background-image: url(/giphy.gif);
+		    background-size: 900px 900px;
+		    background-color: #cccccc;
+		    height: 100vh;
+		    width: 100vw;
+		}
+		.bg{
+				 margin: 0 auto;
+		    display: flex;
+		    width: 296px;
+		    padding-top: 15%;
+
+		}
+		.button{
+			background-color: #c14d4d;
+			color: #fff;
+			padding: 7%;
+			margin: 0;
+			width: 100%;
+			border: 1px black solid;
+			 display: inline-flex;
+			  float: left;
+			  border-radius: 10px;
+		}
+		.join{
+			display: inline-flex;
+			float: left;
+			width: 100%;
+			margin-top: 10px;
+		}
+		.element{
+			 display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  margin: 0 0.5rem;
+		}
+		#meet-link{
+			padding-left: 6%;
+			padding-left: 6%;
+			width: 50%;
+		}
+		.meet{
+			width: 50%;
+			padding-left: 6%;
+			padding-left: 6%;
+		}
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<div class="container">
+		  <button type="buttosn" class="button element"  onclick=newChat()>Start a new Chat</button><br/>
+		  <div class="join"><input type="text" name="meetLink" id="meet-link" class="element" placeholder="paste meet link">
+		  <button type="button" class="button element meet" onclick=joinChat()>Join a Chat</button></div>
+		</div>
+	<div>
+
+  <script>
+    function newChat(){
+      window.location.replace('/chat');
+    }
+   function joinChat(){
+      var link = document.getElementById("meet-link").value;
+      window.location.replace(link);
+    }
+  </script>
+</body>
+</html>
